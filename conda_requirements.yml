@@ -1,0 +1,6 @@
+name: a-conda-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - nltk=3.*
