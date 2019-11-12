@@ -3,10 +3,6 @@ import sys
 import nltk
 
 def main(repeat_times=3, include_tagging=False, sentence=None):
-    # Arguments come in as strings from main. Must manually coerce.
-    print(include_tagging)
-    repeat_times = int(repeat_times)
-    include_tagging = True if str(include_tagging).lower() == 'true' else False
     nltk.download('punkt')
     nltk.download('averaged_perceptron_tagger')
     if not sentence:
@@ -19,6 +15,7 @@ def main(repeat_times=3, include_tagging=False, sentence=None):
         print("Including Tokens")
         tagged = nltk.pos_tag(tokens)
         print(tagged[0:6])
+    return "Done"
 
 if __name__ == "__main__":
     # We will get either json list of args, a json map of kwargs, both or neither.
