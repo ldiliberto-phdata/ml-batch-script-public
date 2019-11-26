@@ -3,7 +3,7 @@ import json
 
 
 def main(*args, **kwargs):
-    print("Hello world from a public repo!")
+    print("Hello world from a public repo (dev branch)!")
     print(f"Here are the positional args: {args}")
     print(f"Here are the named args: {kwargs}")
 
