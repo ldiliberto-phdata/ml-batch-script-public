@@ -1,6 +1,6 @@
 library(jsonlite)
 # source from root of git repository
-source('from/root/of/repo/extlib.R')
+# source('from/root/of/repo/extlib.R')
 
 main <- function(...) {
   args = list(...)
